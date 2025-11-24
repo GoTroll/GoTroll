@@ -1,1 +1,24 @@
+import 'dart:io';
 
+void main() {
+  stdout.write("Enter your name: ");
+  String name = stdin.readLineSync() ?? "";
+  stdout.write("Enter your age: ");
+  String age = stdin.readLineSync() ?? "";
+  stdout.write("Enter your hometown: ");
+  String hometown = stdin.readLineSync() ?? "";
+  stdout.write("Enter your hobbies: ");
+  String hobbies = stdin.readLineSync() ?? "";
+  String autobiography = """
+My name is Jason/楊登富, I am an international student from Indonesia. I am currently 20 years old. 
+I come from Medan, located in North Sumatra, an island in indonesia.
+In most of my free time, I enjoy listening to music and playing badminton. Currently, I am undergoing my academic year in NKUST.
+I am in my third year of university, my department is Information Engineering.
+I started learning how to code or using applications like Visual Studio Code since senior high school during computer lessons.
+And in the past, I am used to studying Math, and physics in cram school,so I don't struggle with logics in programming.
+Thank you for reading.
+This is a short autobiography about myself.
+""";
+  print("\n--- Your Autobiography ---\n");
+  print(autobiography);
+}
